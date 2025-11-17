@@ -1,0 +1,12 @@
+<div #animationContainer class="animation-container"></div>
+
+<textarea
+  [(ngModel)]="inputText"
+  placeholder="I hate... (type anything, then click VOID)"
+  rows="4">
+</textarea>
+
+<button (click)="triggerVoid()" (submit)="triggerVoid()" [disabled]="!inputText.trim()">
+  🌌 VOID IT
+</button>
+

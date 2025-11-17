@@ -1,0 +1,46 @@
+textarea {
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background: #111;
+  color: #fff;
+  font-size: 1rem;
+  resize: vertical;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+button {
+  background: linear-gradient(135deg, #8a2be2, #00bfff);
+  color: white;
+  border: none;
+  padding: 12px 32px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+button:hover:not(:disabled) {
+  transform: scale(1.05);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.animation-container {
+  height: 200px;
+  position: relative;
+  margin-top: 2rem;
+  overflow: hidden;
+  background: transparent;
+}
+
+.char {
+  user-select: none;
+  pointer-events: none;
+  font-size: 1.2rem;
+}
