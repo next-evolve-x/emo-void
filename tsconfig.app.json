@@ -7,9 +7,9 @@
     "types": []
   },
   "files": [
-    "../emo-void/src/main.ts"
+    "src/main.ts"
   ],
   "include": [
-    "../emo-void/src/**/*.d.ts"
+    "src/**/*.d.ts"
   ]
 }
