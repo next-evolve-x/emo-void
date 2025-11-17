@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "main-app": {
+    "emo-void": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/main-app",
+            "outputPath": "dist/emo-void",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -32,6 +32,9 @@
             "scripts": []
           },
           "configurations": {
+            "github-pages": {
+              "baseHref": "/emo-void/"
+            },
             "production": {
               "budgets": [
                 {
@@ -59,10 +62,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "main-app:build:production"
+              "buildTarget": "emo-void:build:production"
             },
             "development": {
-              "buildTarget": "main-app:build:development"
+              "buildTarget": "emo-void:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -89,6 +92,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
